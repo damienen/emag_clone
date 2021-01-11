@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "22131078871",
+    "project_id": "emag-clone-c77af",
+    "storage_bucket": "emag-clone-c77af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22131078871:android:8416d4a4618093af892292",
+        "android_client_info": {
+          "package_name": "gad.flutter.eMag_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22131078871-7c3rdtffltamni9qi4afovm82r68gfb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkn7tchnzo8p6gHQHRqJ9mYSSzyilP8_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22131078871-7c3rdtffltamni9qi4afovm82r68gfb9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
