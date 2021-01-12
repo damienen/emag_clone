@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>22131078871-sqhvod5q9qfvu40paj2972rnl3648da4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.22131078871-sqhvod5q9qfvu40paj2972rnl3648da4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBuYtUXF1ju_KGAe8eQJkinLseV4E0johc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>22131078871</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>gad.flutter.eMagClone</string>
+	<key>PROJECT_ID</key>
+	<string>emag-clone-c77af</string>
+	<key>STORAGE_BUCKET</key>
+	<string>emag-clone-c77af.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:22131078871:ios:0246029c8a4b9d29892292</string>
+</dict>
+</plist>
