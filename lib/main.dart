@@ -1,6 +1,5 @@
-import 'dart:async';
-import 'package:emag_clone/src/init/init.dart';
 import 'package:emag_clone/src/models/index.dart';
+import 'package:emag_clone/src/presentation/mixins/init_mixin.dart';
 import 'package:emag_clone/src/presentation/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
@@ -18,22 +17,7 @@ class eMagClone extends StatefulWidget {
   _eMagCloneState createState() => _eMagCloneState();
 }
 
-class _eMagCloneState extends State<eMagClone> {
-  final Completer<Store<AppState>> _completer = Completer<Store<AppState>>();
-
-  @override
-  void initState() {
-    super.initState();
-
-    init();
-  }
-
-  Future<void> _initStore() async {
-    final Store<AppState> result = await init();
-
-    _completer.complete(result);
-  }
-
+class _eMagCloneState extends State<eMagClone> with InitMixin<eMagClone> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<Store<AppState>>(builder:
@@ -58,7 +42,9 @@ class _eMagCloneState extends State<eMagClone> {
           theme: ThemeData.dark(),
           home: const Scaffold(
               body: Center(
-                child: CircularProgressIndicator(),
+            child: FlutterLogo(
+              size: 200,
+            ),
           )),
         );
       }
