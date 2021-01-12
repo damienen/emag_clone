@@ -1,11 +1,23 @@
-
-
+import 'package:emag_clone/src/containers/auth/index.dart';
+import 'package:emag_clone/src/models/index.dart';
 import 'package:flutter/widgets.dart';
 
-class Home extends StatelessWidget{
-  const Home({Key key}): super(key: key);
+import 'home/home_page.dart';
+import 'login/login_page.dart';
+
+class Home extends StatelessWidget {
+  const Home({Key key}) : super(key: key);
+
   @override
-  Widget build(BuildContext context){
-    return Container();
+  Widget build(BuildContext context) {
+    return UserContainer(
+      builder: (BuildContext context, AppUser user) {
+        if (user == null) {
+          return const LoginPage();
+        } else {
+          return const HomePage();
+        }
+      },
+    );
   }
 }
