@@ -2,7 +2,7 @@ part of auth_models;
 
 abstract class AuthState implements Built<AuthState, AuthStateBuilder> {
   factory AuthState.initialState() {
-    return _$AuthState((AuthStateBuilder b) {});
+    return _$AuthState((b) {});
   }
 
   factory AuthState.fromJson(dynamic json) => serializers.deserializeWith(serializer, json);
@@ -11,6 +11,8 @@ abstract class AuthState implements Built<AuthState, AuthStateBuilder> {
 
   @nullable
   AppUser get user;
+
+  RegisterInfo get info;
 
   Map<String, dynamic> get json => serializers.serializeWith(serializer, this) as Map<String, dynamic>;
 
